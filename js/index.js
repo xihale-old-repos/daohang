@@ -15,7 +15,18 @@ class BOX {
 			Logo='logo';
 			temp='<img src='+logo+'> ';
 		}
+		var temp_1='';
+		if(introduce!=undefined){
+			temp_1='<div class="desc">'+introduce+'</div>';
+		}
 		//添加到一个导航元素到尾部
-		this.box.innerHTML=this.box.innerHTML+'<div><a target="_blank" href="'+url+'"><div class="item"><div class="'+Logo+'">'+temp+name+'</div><div class="desc">'+introduce+'</div></div></a></div>';
+		this.box.innerHTML=this.box.innerHTML+'<div><a target="_blank" href="'+url+'"><div class="item"><div class="'+Logo+'">'+temp+name+'</div>'+temp_1+'</div></a></div>';
+	}
+	adds(arg){
+		let l=arg.length;
+		for(let i=0;i<l;i++)
+		{
+			this.add(arg[i][0],arg[i][1],arg[i][2],arg[i][3]);//依次调用
+		}
 	}
 };
