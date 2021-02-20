@@ -1,7 +1,9 @@
 # daohang
 一个简约的导航站
 
-#前言
+# [demo](http://xihale.gitee.io/daohang/)
+
+# 前言
 >模板是网上有的
 >但是,代码太复杂
 >所以我就改了一下
@@ -24,7 +26,7 @@
 		],
 		[
 			"https://github.com",
-			"github"
+			"github",
 			"跳转到github"
 		],
 		[
