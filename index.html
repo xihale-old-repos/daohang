@@ -41,7 +41,7 @@
 				-->
 			<footer class="footer">
 				<div class="copyright">Copyright &copy; 2021</div>
-				<script src="js/index.min.js"></script>
+				<script src="js/index.js"></script>
 				<!--js_demo-->
 				<!--
 					icon_demo
@@ -56,11 +56,21 @@
 				-->
 				<script>
 					var mirror=new BOX("镜像","mirror","xuexi1");
-					mirror.add("https://xihale.top","博客","我的博客","https://avatars.githubusercontent.com/u/62087089?s=400&u=a4bf42f7f854cd4c34924b73ace325897d80de7a&v=4");
+					mirror.adds([
+									[
+										"https://xihale.top",
+										"博客",
+										"我的博客",
+										"https://avatars.githubusercontent.com/u/62087089?s=400&u=a4bf42f7f854cd4c34924b73ace325897d80de7a&v=4"
+									],
+									[
+										"https://baidu.com",
+										"百度"
+									]
+								]);
 				</script>
 				<!--end_demo-->
             </footer>
         </section>
 </body>
-
 </html>
